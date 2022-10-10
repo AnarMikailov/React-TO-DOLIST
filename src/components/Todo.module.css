@@ -5,3 +5,7 @@
 .list li {
   list-style: none;
 }
+.done {
+  font-style: oblique;
+  text-decoration: line-through;
+}

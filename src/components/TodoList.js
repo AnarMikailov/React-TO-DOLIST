@@ -1,12 +1,25 @@
-import React from 'react';
-import Todo from './Todo';
+import React from "react";
+import Todo from "./Todo";
 
-const TodoList = ({ todo }) => {
+const date = new Date().toLocaleDateString("en-US").split("");
+const TodoList = ({ todos, setTodos }) => {
+  const removeTodo = (e) => {
+    // console.log(todo);
+    // console.log(todo);
+  };
   return (
     <div>
       <ul>
-        {todo.map(todo => (
-          <Todo text={todo.text} id={todo.id} key={todo.id} />
+        {date}
+        {todos.map((todo) => (
+          <Todo
+            setTodos={setTodos}
+            todos={todos}
+            todo={todo}
+            text={todo.text}
+            id={todo.id}
+            key={todo.id}
+          />
         ))}
       </ul>
     </div>
