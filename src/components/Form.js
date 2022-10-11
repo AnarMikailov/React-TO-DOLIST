@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Form.module.css";
 
 function Form({ inputText, setInputText, todos, setTodos, todo }) {
   const inputTextHandler = (e) => {
@@ -16,6 +17,7 @@ function Form({ inputText, setInputText, todos, setTodos, todo }) {
   };
   return (
     <div>
+      <h1>To do list</h1>
       <form onSubmit={submitHandler}>
         <input
           value={inputText}
@@ -24,7 +26,9 @@ function Form({ inputText, setInputText, todos, setTodos, todo }) {
           type="text"
         />
       </form>
-      <button onClick={submitHandler}>+</button>
+      <button className={styles.ion} onClick={submitHandler}>
+        <ion-icon name="add-circle-sharp"></ion-icon>
+      </button>
     </div>
   );
 }

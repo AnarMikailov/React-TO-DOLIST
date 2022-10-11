@@ -1,16 +1,12 @@
 .App {
+  width: auto;
   text-align: center;
+  min-height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 5rem;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-style: Lucida Handwriting;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,35 +15,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .todo__input {
-  width: 25rem;
-  height: 2rem;
-}
-label {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
+  min-width: 25rem;
+  min-height: 2rem;
 }

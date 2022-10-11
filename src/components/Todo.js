@@ -18,9 +18,15 @@ function Todo({ text, setTodos, todos, todo }) {
     <>
       {
         <div className={styles.list}>
-          <button onClick={deleteHandler}>Delete</button>
-          <input onChange={doneHandler} type="checkbox" />
-          {<li className="saasas">{text}</li>}
+          <button className={styles.deleteButton} onClick={deleteHandler}>
+            <ion-icon className={styles.doneIcon} name="trash-sharp"></ion-icon>
+          </button>
+          <input
+            className={styles.checkbox}
+            onChange={doneHandler}
+            type="checkbox"
+          />
+          {<li>{text}</li>}
         </div>
       }
     </>

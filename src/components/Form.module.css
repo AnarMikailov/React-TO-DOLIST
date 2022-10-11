@@ -1,0 +1,21 @@
+button {
+  border: none;
+  background: none;
+}
+button:hover {
+  background-color: coral;
+  border-radius: 25%;
+}
+.ion {
+  margin-top: 1rem;
+  padding-top: 0.4rem;
+}
+h1 {
+  margin-top: 5rem;
+}
+input {
+  background-color: rgb(217, 221, 197);
+  color: rgb(31, 26, 21);
+  font-weight: 700;
+  font-size: 1rem;
+}

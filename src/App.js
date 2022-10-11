@@ -7,15 +7,17 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
   return (
-    <div className="App">
-      <Form
-        setTodos={setTodos}
-        todo={todos}
-        inputText={inputText}
-        setInputText={setInputText}
-      />
-      <TodoList setTodos={setTodos} todos={todos} />
-    </div>
+    <>
+      <div className="App">
+        <Form
+          setTodos={setTodos}
+          todo={todos}
+          inputText={inputText}
+          setInputText={setInputText}
+        />
+        <TodoList setTodos={setTodos} todos={todos} />
+      </div>
+    </>
   );
 }
 
